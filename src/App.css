@@ -1,7 +1,37 @@
 /* font imports */
 @import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@700&family=Merriweather:ital,wght@1,700&family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@700&family=Merriweather:ital,wght@1,700&family=Montserrat&family=Unica+One&display=swap');
+
+
+
+
 
 /* font imports */
+
+body{
+  background: #150e28;
+  color:#fff;
+}
+.section-header{
+  color: #fff;
+  font-family: 'Clash Display', sans-serif;
+}
+
+.section-header-span{
+  color: #d434fe;
+}
+.section-subtext{
+  color: #fff;
+ 
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+
+/* nav styles */
+.nav-section{
+  border-bottom: 1px solid #fff;
+}
 .nav-brand{
   font-family: 'Clash Display', sans-serif;
   font-weight: 700;
@@ -16,23 +46,128 @@
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   font-weight: 400;
-  
+  color:#fff;
+  padding: 20px 50px ;
+  width: min-content;
   
 }
 
 .nav-btn.register-btn{
-  width: 172px;
-  height: 53px;
-  background: linear-gradient(#903aff, #d434fe,#ff26b9,#ff34b9);
+  /* width: 172px;
+  height: 53px; */
+  background: linear-gradient(to left,#903aff, #d434fe,#ff26b9,#ff34b9);
   border-radius: 4px;
   margin: 0 auto;
+  
+  color: #fff;
+}
+/* nav  styles */
+
+/* hero-styles */
+
+.hero-header{
+  font-size: 80px;
+  color: #fff;
+  font-family: 'Clash Display', sans-serif;
+}
+.hero-header span{
+  
+  color: #d434fe;
+
+ 
 }
 
 
 
-
+.register-btn-hero{
+  background: linear-gradient(to left,#903aff, #d434fe,#ff26b9,#ff34b9);
+  border-radius: 4px;
+  
+  
+  color: #fff;
+}
+.left-hero .hero-sub-text{
+  color: #fff;
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
 .right-hero{
   background-image: url("./assets/man-wearing-smart-glasses.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
+.ignite-text{
+  margin-top:20px;
+  font-size: 36px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  width: max-content;
+  position: relative;
+}
+.bent-line{
+  position: absolute;
+  bottom: -35px;
+  right: 10px;
+}
+
+.timer{
+  font-family: 'Unica One', cursive;
+}
+.hour, .minute,.second{
+  font-size: 64px;
+}
+
+.small-leter-timer{
+  font-size:14px;
+}
+.hour,.minute{
+margin-right: 20px;
+}
+/* hero-styles */
+
+/* intro styles */
+
+
+
+.left-intro{
+  
+  
+}
+.bulb{
+  position: relative;
+}
+.bulb-text{
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.right-intro-sub-text{
+  font-size: 14px;
+}
+
+/* intro styles */
+
+/* rules section */
+.left-rules-sub-text{
+  font-size: 14px;
+}
+/* rules section */
+
+/* key attributes */
+.right-keyatrributes ul{
+  list-style: none;
+}
+.key-attributes-li{
+  font-size: 14px;
+}
+.list-attributes-header{
+  color: #ff26b9;
+  font-size: 16px;
+}
+
+/* key attributes */

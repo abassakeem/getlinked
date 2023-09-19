@@ -10,11 +10,11 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 export default function NavbarSection() {
   return (
     <>
-     <Navbar expand="sm" className="bg-body-tertiary">
+     <Navbar expand="sm" className=" nav-section pt-5">
       <Container >
         <Navbar.Brand href="#" className='nav-brand'>get<span className='navbrand-span-linked'>linked</span></Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
-        <Navbar.Collapse id="navbarScroll" className="justify-content-end">
+        <Navbar.Collapse id="navbarScroll" className="justify-content-end gap-5">
         <Nav  >
         <Nav.Item>
           <Nav.Link  className='nav-btn timeline-btn'>Timeline</Nav.Link>
