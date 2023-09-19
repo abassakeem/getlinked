@@ -1,0 +1,38 @@
+/* font imports */
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@700&family=Merriweather:ital,wght@1,700&family=Montserrat&display=swap');
+
+/* font imports */
+.nav-brand{
+  font-family: 'Clash Display', sans-serif;
+  font-weight: 700;
+  color: #fff;
+  font-size: 36px;
+  
+}
+.nav-brand .navbrand-span-linked{
+  color: #d434fe
+}
+.nav-btn{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  
+  
+}
+
+.nav-btn.register-btn{
+  width: 172px;
+  height: 53px;
+  background: linear-gradient(#903aff, #d434fe,#ff26b9,#ff34b9);
+  border-radius: 4px;
+  margin: 0 auto;
+}
+
+
+
+
+.right-hero{
+  background-image: url("./assets/man-wearing-smart-glasses.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
