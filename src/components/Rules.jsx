@@ -5,9 +5,9 @@ import { Col, Container, Image, Row } from 'react-bootstrap'
 export default function Rules() {
   return (
     <>
-
+  <div className="rules-section-container vh-100">
       <Container>
-        <div className="rules-section-container ">
+      
           <div className="rules-row">
             <Row>
               <Col sm={6} className='d-flex justify-content-center align-items-center'>
@@ -42,9 +42,9 @@ export default function Rules() {
 
             </Row>
           </div>
-        </div>
+      
       </Container>
-
+  </div>
     </>
   )
 }

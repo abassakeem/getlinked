@@ -6,9 +6,9 @@ import img from "./../assets/8046554 1.png"
 export default function KeyAttributes() {
   return (
     <>
-
+ <div className="keyattributes-section-container vh-100">
       <Container>
-        <div className="keyattributes-section-container v">
+       
           <div className="keyattributes-row">
             <Row>
 
@@ -65,9 +65,9 @@ export default function KeyAttributes() {
 
             </Row>
           </div>
-        </div>
+       
       </Container>
-
+ </div>
     </>
   )
 }

@@ -6,6 +6,8 @@ import Rules from '../components/Rules'
 import KeyAttributes from '../components/KeyAttributes'
 import Faq from '../components/Faq'
 import Footer from '../components/Footer'
+import Prizes from '../components/Prizes'
+import Partners from '../components/Partners'
 
 export default function LandingPage() {
   return (
@@ -16,6 +18,8 @@ export default function LandingPage() {
         <Rules/>
         <KeyAttributes/>
         <Faq/>
+        <Prizes/>
+        <Partners/>
 
         <Footer/>
     </>

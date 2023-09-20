@@ -12,6 +12,9 @@ body{
   background: #150e28;
   color:#fff;
 }
+p{
+  font-family: 'Montserrat', sans-serif;
+}
 .section-header{
   color: #fff;
   font-family: 'Clash Display', sans-serif;
@@ -171,3 +174,183 @@ margin-right: 20px;
 }
 
 /* key attributes */
+
+/* faq section */
+
+.faq-li{
+  font-size: 14px;
+  border-bottom: 1px solid #d434fe;
+  margin-bottom: 30px;
+
+}
+.faq-subtext{
+  font-weight: bold;
+}
+.more-button{
+  font-size: 20px;
+  color: #d434fe;
+}
+/* faq section */
+
+/* amount-section */
+.award-amount{
+  color: #d434fe;
+  font-family: 'Montserrat', sans-serif;
+ 
+  font-size: 24px;
+  font-weight: bold;
+}
+.award-title{
+  color: #fff;
+   font-weight: 500;
+   font-family: 'Montserrat', sans-serif;
+}
+.award-position{
+  font-size: 36px;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.award-position-1{
+  font-size: 40px;
+}
+
+
+.award-amount-1{
+  color: #903aff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  font-weight: bold;
+}
+/* amount-section */
+
+/* sponsors section */
+
+.sponsors-container{
+  padding: 100px;
+  border: 1px solid #d434fe;
+}
+.sponsors-container .sponsor-logo{
+  border: 1px solid #d434fe;
+}
+/* sponsors section */
+
+
+
+
+
+
+
+/* contact section */
+
+.contact-header{
+  color: #d434fe;
+  font-family: 32px;
+  font-family: 'Clash Display', sans-serif;
+  font-weight: 500;
+}
+.contact-subheading{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+}
+
+
+.submit-btn{
+  background: linear-gradient(to left,#903aff, #d434fe,#ff26b9,#ff34b9);
+  border-radius: 4px;
+  margin: 0 auto;
+  
+  color: #fff;
+}
+.share-on{
+  color: #d434fe;
+}
+.social-media{
+  color: #fff;
+}
+.phone-number{
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}
+.form-header{
+  color: #d434fe;
+  font-family: 'Clash Display', sans-serif;
+  font-size: 20px;
+}
+.contact-form form{
+  
+}
+.contact-form input, .contact-form textarea {
+  background-color: transparent ;
+  border: 1px solid #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  padding: 10px;
+  color: #fff;
+  height: 47px;
+  width: 437px;
+  border-radius: 4px;
+}
+.contact-form input::placeholder, .contact-form textarea::placeholder {
+  color: #fff;
+}
+.contact-form textarea{
+  height: 119px;
+}
+.contact-btn{
+  height: 53px;
+  width: 172px;
+}
+
+/* contact section */
+
+/* Register section */
+
+
+.register-header{
+  color: #d434fe;
+  font-size: 32px;
+}
+.form-subheader h6{
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.woman-img,.man-img{
+  height: 26px;
+  width: 26px;
+}
+.walking{
+  border-bottom: 2px dotted #d434fe;
+  position: relative;
+  text-align:center;
+  width: 101px;
+  bottom: 15px;
+  left: 3px;
+  
+}
+
+.register-form input, .register-form textarea {
+  background-color: transparent ;
+  border: 1px solid #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  padding: 10px;
+  color: #fff;
+  height: 47px;
+  width: 263px;
+  border-radius: 4px;
+}
+.review-text{
+  font-size: 12px;
+  font-style: italic;
+  color: #ff26b9;
+}
+.checkbox{
+  height: 14px !important ;
+  width: 14px !important;
+  background-color: transparent;
+}
+/* Register section */
