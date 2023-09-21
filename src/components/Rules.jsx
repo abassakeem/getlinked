@@ -5,7 +5,7 @@ import { Col, Container, Image, Row } from 'react-bootstrap'
 export default function Rules() {
   return (
     <>
-  <div className="rules-section-container vh-100">
+  <div className="rules-section-container vh-50">
       <Container>
       
           <div className="rules-row">

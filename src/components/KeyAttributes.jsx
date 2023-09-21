@@ -27,7 +27,7 @@ export default function KeyAttributes() {
                       <h2>Judging Criteria <br /> <span className='section-header-span'> Key attributes</span></h2>
                     </div>
                     <div className="right-keyattributes-sub-text section-subtext">
-                      <ul>
+                      <ul className='m-0 p-0'>
                         <li><p className='key-attributes-li'><span className='list-attributes-header'>Innovation and creativity</span>: Evaluate the uniqueness and creativity of the
                           solution. Consider whether it addresses a real-world problem in a novel
                           way or introduces innovative features.
@@ -54,6 +54,10 @@ export default function KeyAttributes() {
                         </p>
                         </li>
                       </ul>
+                      <div className="register-btn-container-hero mt-5 mb-5">
+                <a  className='nav-btn   register-btn-hero '>
+            Read More
+          </a></div>
 
                     </div>
 

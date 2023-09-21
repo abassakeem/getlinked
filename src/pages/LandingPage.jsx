@@ -8,6 +8,8 @@ import Faq from '../components/Faq'
 import Footer from '../components/Footer'
 import Prizes from '../components/Prizes'
 import Partners from '../components/Partners'
+import Privacy from '../components/Privacy'
+import Timeline from '../components/Timeline'
 
 export default function LandingPage() {
   return (
@@ -18,8 +20,11 @@ export default function LandingPage() {
         <Rules/>
         <KeyAttributes/>
         <Faq/>
-        <Prizes/>
-        <Partners/>
+        <Timeline/>
+        <Prizes/> 
+         <Partners/>
+        <Privacy/>
+      
 
         <Footer/>
     </>

@@ -1,7 +1,7 @@
 /* font imports */
 @import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@700&family=Merriweather:ital,wght@1,700&family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@700&family=Merriweather:ital,wght@1,700&family=Montserrat&family=Unica+One&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@700&family=Merriweather:ital,wght@1,700&family=Montserrat:wght@700&family=Unica+One&display=swap');
 
 
 
@@ -13,6 +13,9 @@ body{
   color:#fff;
 }
 p{
+  font-family: 'Montserrat', sans-serif;
+}
+a{
   font-family: 'Montserrat', sans-serif;
 }
 .section-header{
@@ -28,12 +31,36 @@ p{
  
   font-family: 'Montserrat', sans-serif;
 }
-
+.clash{
+  font-family: 'Clash Display', sans-serif;
+}
 
 
 /* nav styles */
+.section-end{
+  border-bottom: 1px solid rgba(255, 255, 255,0.18);
+}
 .nav-section{
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid rgba(255, 255, 255,0.18);
+  padding-top: 30px;
+  padding-bottom: 15px;
+}
+.timeline-btn, .overview-btn, .faq-btn, .contact-btn{
+  margin-left: 40px;
+}
+button{
+  font-size: 16px;
+}
+.register-btn{
+  width: 172px;
+  height: 53px;
+  margin: 0 auto;
+  text-decoration: none;
+  cursor: pointer;
+  
+}
+.register-btn-container{
+  margin-left: 25px !important;
 }
 .nav-brand{
   font-family: 'Clash Display', sans-serif;
@@ -85,9 +112,17 @@ p{
 .register-btn-hero{
   background: linear-gradient(to left,#903aff, #d434fe,#ff26b9,#ff34b9);
   border-radius: 4px;
-  
-  
+   margin: 0 auto;
+  text-decoration: none;
+  width: 172px;
+  height: 53px;
   color: #fff;
+  cursor: pointer;
+}
+.register-btn{
+  
+ 
+  
 }
 .left-hero .hero-sub-text{
   color: #fff;
@@ -104,10 +139,13 @@ p{
   margin-top:20px;
   font-size: 36px;
   font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
+ 
   font-style: italic;
   width: max-content;
   position: relative;
+}
+.ignite-text h3{
+   font-weight: bold;
 }
 .bent-line{
   position: absolute;
@@ -198,7 +236,7 @@ margin-right: 20px;
   font-family: 'Montserrat', sans-serif;
  
   font-size: 24px;
-  font-weight: bold;
+  font-weight: 700;
 }
 .award-title{
   color: #fff;
@@ -207,7 +245,7 @@ margin-right: 20px;
 }
 .award-position{
   font-size: 36px;
-  font-weight: bold;
+  font-weight: 700;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -221,22 +259,127 @@ margin-right: 20px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   font-size: 24px;
-  font-weight: bold;
+  font-weight: 700;
 }
 /* amount-section */
 
 /* sponsors section */
 
 .sponsors-container{
+  
   padding: 100px;
   border: 1px solid #d434fe;
 }
 .sponsors-container .sponsor-logo{
-  border: 1px solid #d434fe;
+ 
 }
 /* sponsors section */
 
+/* PARTNERS */
+img .libertyassured-partner{
+  height: 114px;
+  position: relative;
+  width: 120px;
+  
+  
+}
+img .winwise-partner{
+  height: 107px;
+  width: 131px;
+  position: relative;
+}
+img .paybox-partner{
+  height: 21px;
+  width: 204px;
+  position: relative;
+}
+img .whisper-partner{
+  height: 110px;
+  width: 147px;
+  position: relative;
+}
+img .vuzual-partner{
+  height: 45px;
+  width: 231px;
+  position: relative;
+}
+img .libertypay-partner{
+  height: 40px;
+  width: 213px;
+  position: ;
+}
+.libertyassured::before,.winwise::before{
+  content: " ";  
+  width: 257px;
+    height: 4px;
+    background-color: #d434fe;
+    position: absolute;
+    bottom: 0;
+       right: 0;
+    left: 0;
+    margin: 0 auto;
+    
+}
+.libertypay::before{
+  content: " ";  
+  width: 257px;
+    height: 4px;
+    background-color: #d434fe;
+    position: absolute;
+    bottom: -36px;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+   
+    
+}
 
+.libertyassured::after{
+  content: " ";  
+  width: 4px;
+    height: 112px;
+    background-color: #d434fe;
+    position: absolute;
+   
+    right: 0;
+    margin: 0 auto;
+    
+}
+.whisper::before{
+  content: " ";  
+  width: 4px;
+    height: 112px;
+    background-color: #d434fe;
+    position: absolute;
+   
+    right: 0;
+    margin: 0 auto;
+    
+}
+.winwise::after{
+  content: " ";  
+  width: 4px;
+    height: 112px;
+    background-color: #d434fe;
+    position: absolute;
+   bottom: 0px;
+    left: 0;
+    margin: 0 auto;
+    
+}
+.vuzual::before{
+  content: " ";  
+  width: 4px;
+    height: 112px;
+    background-color: #d434fe;
+    position: absolute;
+   bottom: -30px;
+    left: 0;
+    margin: 0 auto;
+    
+}
+
+/* PARTNERS */
 
 
 
@@ -260,9 +403,11 @@ margin-right: 20px;
   background: linear-gradient(to left,#903aff, #d434fe,#ff26b9,#ff34b9);
   border-radius: 4px;
   margin: 0 auto;
-  
+
   color: #fff;
+ 
 }
+
 .share-on{
   color: #d434fe;
 }
@@ -295,6 +440,9 @@ margin-right: 20px;
 }
 .contact-form input::placeholder, .contact-form textarea::placeholder {
   color: #fff;
+  opacity: 25%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
 }
 .contact-form textarea{
   height: 119px;
@@ -324,21 +472,20 @@ margin-right: 20px;
 }
 .walking{
   border-bottom: 2px dotted #d434fe;
-  position: relative;
+  
   text-align:center;
   width: 101px;
-  bottom: 15px;
-  left: 3px;
+ 
   
 }
 
-.register-form input, .register-form textarea {
+.register-form input, .register-form textarea, .register-form select {
   background-color: transparent ;
   border: 1px solid #fff;
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
-  padding: 10px;
-  color: #fff;
+  padding: 10px 20px;
+  color: rgba(255, 255, 255, 0.25);
   height: 47px;
   width: 263px;
   border-radius: 4px;
@@ -351,6 +498,145 @@ margin-right: 20px;
 .checkbox{
   height: 14px !important ;
   width: 14px !important;
-  background-color: transparent;
+  background-color: transparent !important;
+  position: absolute;
+  color: transparent !important;
+  left: 2px;
+  top :2px;
 }
+.creacte-account-header{
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.register-form label{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+}
+select{
+
+  color: rgba(255, 255, 255, 0.25);
+  background-color: transparent;
+  border: 1px solid #fff;
+
+}
+option{
+  background-color: #150e28;
+ 
+}
+.agree{
+  font-size: 12px;
+  position: relative;
+}
+.register-form select{
+  color: #fff;
+  
+}
+
 /* Register section */
+
+
+
+/* privacy */
+.left-privacy{
+  
+}
+.security{
+ margin-bottom: 150px;
+ height: 648px;
+ width: 530px;
+}
+.man-padlock{
+  top: 170px;
+  bottom: 0;
+  left: -55px;
+  height: 749px;
+  width: 559px;
+
+}
+.privacy-and-policy-inner{
+padding: 60px;
+width: 589px;
+margin: 0 auto;
+line-height: 216.4% ;
+}
+.privacy-text{
+  font-size: 14px;
+  
+}
+.check-button{
+  color: #2DE100;
+ height: 16px;
+ width: 16px;
+   margin: 0 auto;
+  margin-right: 10px;
+ 
+
+}
+.standard-liscence{
+  font-weight: bold;
+}
+.privacy-and-policy{
+  border: 1px solid #d434fe;
+  border-radius: 5px;
+ 
+}
+/* privacy */
+
+/* footer */
+.middle-section a{
+  color: #fff;
+  text-decoration: none;
+  
+}
+
+.left-secction, .middle-section, .left-section{
+  font-size: 12px !important;
+}
+.phone-number a{
+color: #fff;
+font-size: 12px;
+}
+.address{
+  color: #fff;
+  font-size: 12px;
+}
+.copyright{
+  color: #fff;
+  font-size: 12px;
+}
+.purple{
+  color: #d434fe;
+  
+
+}
+.social-media{
+bottom: -15px;
+}
+.mont{
+  font-family: 'Montserrat', sans-serif;
+  
+  text-decoration: none;
+}
+.address,.phone-number {
+  margin-top: 10px;
+  
+}
+.address-text {
+  margin-left: 20px;
+}
+.phone-number-number{
+  margin-left: 10px;
+}
+
+.terms-of-use{
+bottom: -30px;
+}
+.footer-text{
+  font-size: 12px;
+}
+/* footer */
+
+
+
+

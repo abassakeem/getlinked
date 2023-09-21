@@ -1,5 +1,12 @@
 import React from 'react'
-import { Col, Container, Row } from 'react-bootstrap'
+import libertyassured from "./../assets/Liberty company logo white colour.png"
+import libertypay from "./../assets/Liberty company logo white.png"
+import winwise from "./../assets/Winwise logo White colour 1.png"
+import whisper from "./../assets/wisper logo white.png"
+import paybox from "./../assets/paybox.png"
+import vuzual from "./../assets/vuzual.png"
+
+import { Col, Container, Image, Row } from 'react-bootstrap'
 
 export default function Partners() {
     return (
@@ -17,30 +24,30 @@ export default function Partners() {
                             </Col>
                             <Col xs={12}>
                                 <Container className='sponsors-container d-flex  justify-content-center align-items-center'>
-                                    <Row className=' '>
-                                        <Col xs={4}>
-                                            <div className="sponsor-logo">
-                                                liberty assured</div>
+                                    <Row className='d-flex justify-content-center align-items-center g-5 '>
+                                        <Col xs={4} className='position-relative'>
+                                            <div className="sponsor-logo libertyassured">
+                                                <Image src={libertyassured} className='libertyassured-partner' fluid/></div>
                                         </Col>
-                                        <Col xs={4}>
-                                            <div className="sponsor-logo">
-                                                libertyPay</div>
+                                        <Col xs={4} className='position-relative'>
+                                            <div className="sponsor-logo libertypay">
+                                            <Image src={libertypay} fluid  className='libertypay-partner'/></div>
                                         </Col>
-                                        <Col xs={4}>
-                                            <div className="sponsor-logo">
-                                                WinWise</div>
+                                        <Col xs={4} className='position-relative'>
+                                            <div className="sponsor-logo winwise">
+                                            <Image src={winwise} fluid className='winwise-partner'/></div>
                                         </Col>
-                                        <Col xs={4}>
-                                            <div className="sponsor-logo">
-                                                whispersms</div>
+                                        <Col xs={4} className='position-relative'>
+                                            <div className="sponsor-logo whisper">
+                                            <Image src={whisper} fluid className='whisper-partner'/></div>
                                         </Col>
-                                        <Col xs={4}>
-                                            <div className="sponsor-logo">
-                                                paybox</div>
+                                        <Col xs={4} className='position-relative'>
+                                            <div className="sponsor-logo paybox">
+                                            <Image src={paybox} fluid className='paybox-partner'/></div>
                                         </Col>
-                                        <Col xs={4}>
-                                            <div className="sponsor-logo">
-                                                vizualplus</div>
+                                        <Col xs={4} className='position-relative'>
+                                            <div className="sponsor-logo vuzual">
+                                            <Image src={vuzual} fluid className='vuzual-partner'/></div>
                                         </Col>
 
                                     </Row>
