@@ -1,5 +1,7 @@
 import React from 'react'
+import satagra from "./../assets/sata gra.png"
 import img from "./../assets/the big idea 1.png"
+import arrow from "./../assets/arrow.png"
 import { Col, Container, Image, Row } from 'react-bootstrap'
 
 export default function Introduction() {
@@ -14,12 +16,18 @@ export default function Introduction() {
 
               <Col sm={6} className='d-flex justify-content-center align-items-center'>
                 <div className="left-intro">
-                  <div className="bulb">
+                  <div className="position-relative">
+                      <Image src={satagra} className='blinking-star satagra-star intro-satagra-star ' fluid />
+                      </div>
+                      <div className="bulb">
 
+                  
 
-
-                    <Image src={img} fluid />
+                    <Image src={img} fluid className='big-idea-bulb'/>
                     <span className='bulb-text'>The Big Idea!</span>
+                    <div className="position-relative">
+                      <Image src={arrow} className='arrow intro-arrow ' fluid />
+                      </div>
                   </div>
                 </div>
 
@@ -30,6 +38,9 @@ export default function Introduction() {
                     <div className="right-intro-header section-header">
                       <h2>Intoduction to getlinked <br /> <span className='section-header-span'> techHackathon 1.0</span></h2>
                     </div>
+                    <div className="position-relative">
+                      <Image src={satagra} className='blinking-star satagra-star1 intro-satagra-star1 ' fluid />
+                      </div>
                     <div className="right-intro-sub-text section-subtext">
                       <p>Our tech hackathon is a melting pot of visionaries, and its purpose is as
                         clear as day: to shape the future. Whether you're a coding genius, a

@@ -1,7 +1,8 @@
 import React from 'react'
 import img from "./../assets/7450159 1.png"
 import { Col, Container, Image, Row } from 'react-bootstrap'
-
+import star1 from "./../assets/star-transparent.png"
+import star from "./../assets/star.png"
 export default function Rules() {
   return (
     <>
@@ -15,6 +16,9 @@ export default function Rules() {
                   <div className="left-rules">
                     <div className="left-rules-header section-header">
                       <h2>Rules and  <br /> <span className='section-header-span'> Guildelines</span></h2>
+                      <div className="position-relative ">
+                      <Image src={star1} className='moving-star  rules-transparent-star ' fluid />
+                      </div>
                     </div>
                     <div className="left-rules-sub-text section-subtext">
                       <p>Our tech hackathon is a melting pot of visionaries, and its purpose is as
@@ -23,7 +27,9 @@ export default function Rules() {
                         your ideas into reality. Solving real-world problems, pushing the boundaries
                         of technology, and creating solutions that can change the world,
                         that's what we're all about!</p>
-
+                        <div className="position-relative ">
+                      <Image src={star} className='moving-star  rules-star ' fluid />
+                      </div>
                     </div>
 
                   </div>

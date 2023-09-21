@@ -1,7 +1,9 @@
 import React from 'react'
 import img from "./../assets/cwok_casual_21 1.png"
 import { Col, Container, Image, Row } from 'react-bootstrap'
-
+import star from "./../assets/star.png"
+import satagra from "./../assets/sata gra.png"
+import star1 from "./../assets/star-transparent.png"
 export default function Faq() {
   return (
     <>
@@ -14,6 +16,9 @@ export default function Faq() {
                 <div className="left-faq-container">
                   <div className="left-faq">
                     <div className="left-faq-header section-header">
+                    <div className="position-relative ">
+                      <Image src={satagra} className='moving-star  faq-satagra-star ' fluid />
+                      </div>
                       <h2>Frequently Asked <br /> <span className='section-header-span'>Questions</span></h2>
                       <p className='faq-text section-subtext mb-5'>We got answers to the questions that you might want to ask about <span className='faq-subtext'>getlinked Hackathon 1.0</span></p>
                     </div>
