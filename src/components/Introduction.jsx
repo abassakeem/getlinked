@@ -17,7 +17,7 @@ export default function Introduction() {
               <Col sm={6} className='d-flex justify-content-center align-items-center'>
                 <div className="left-intro">
                   <div className="position-relative">
-                      <Image src={satagra} className='blinking-star satagra-star intro-satagra-star ' fluid />
+                      <Image src={satagra} className='blinking-sata satagra-star intro-satagra-star ' fluid />
                       </div>
                       <div className="bulb">
 
@@ -39,10 +39,10 @@ export default function Introduction() {
                       <h2>Intoduction to getlinked <br /> <span className='section-header-span'> techHackathon 1.0</span></h2>
                     </div>
                     <div className="position-relative">
-                      <Image src={satagra} className='blinking-star satagra-star1 intro-satagra-star1 ' fluid />
+                      <Image src={satagra} className='blinking-sata satagra-star1 intro-satagra-star1 ' fluid />
                       </div>
                     <div className="right-intro-sub-text section-subtext">
-                      <p>Our tech hackathon is a melting pot of visionaries, and its purpose is as
+                      <p className='intro-text'>Our tech hackathon is a melting pot of visionaries, and its purpose is as
                         clear as day: to shape the future. Whether you're a coding genius, a
                         design maverick, or a concept wizard, you'll have the chance to transform
                         your ideas into reality. Solving real-world problems, pushing the boundaries

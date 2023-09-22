@@ -38,6 +38,40 @@ a{
 }
 .blinking-star{
 
+  animation: twinkle2 1s infinite;
+
+}
+.blinking-trans-star{
+  animation: twinkle3 1s infinite;
+}
+.blinking-sata{
+
+  animation: twinkle 1s infinite;
+
+}
+.section{
+
+}
+@keyframes twinkle {
+  50%{
+    transform: scale(0.5);
+    opacity: 0.5;
+  }
+  
+}
+@keyframes twinkle2 {
+  22%{
+    transform: scale(0.5);
+    opacity: 0.5;
+  }
+  
+}
+@keyframes twinkle3 {
+  62%{
+    transform: scale(0.5);
+    opacity: 0.5;
+  }
+  
 }
 .star{
   height: 32px;
@@ -62,14 +96,14 @@ button{
 }
 .register-btn{
   width: 172px;
-  height: 53px;
+  
   margin: 0 auto;
   text-decoration: none;
   cursor: pointer;
   
 }
 .register-btn-container{
-  margin-left: 25px !important;
+  
 }
 .nav-brand{
   font-family: 'Clash Display', sans-serif;
@@ -86,9 +120,19 @@ button{
   font-size: 16px;
   font-weight: 400;
   color:#fff;
-  padding: 20px 50px ;
+  padding: 15px 50px ;
   width: min-content;
   
+}
+.white-close-button {
+  color: white;
+}
+button.btn-close{
+  height: 11px;
+  width: 11px;
+  color: #fff !important;
+  border: 1px solid #fff;
+  border-radius: 50%;
 }
 
 .nav-btn.register-btn{
@@ -97,6 +141,7 @@ button{
   background: linear-gradient(to left,#903aff, #d434fe,#ff26b9,#ff34b9);
   border-radius: 4px;
   margin: 0 auto;
+
   
   color: #fff;
 }
@@ -175,16 +220,18 @@ button{
   background-repeat: no-repeat;
 }
 .ignite-text{
+  width: 100%;
   margin-top:20px;
   font-size: 36px;
   font-family: 'Montserrat', sans-serif;
- 
+
   font-style: italic;
   width: max-content;
   position: relative;
 }
 .ignite-text h3{
    font-weight: bold;
+    text-align: right;
 }
 .bent-line{
   position: absolute;
@@ -313,6 +360,15 @@ bottom: 0px;
   margin-bottom: 30px;
 
 }
+.faq-star1{
+  position: absolute;
+  bottom: 270px;
+  left: 40px
+}
+.faq-star2{
+  position: absolute;
+  right: 130px;
+}
 .faq-subtext{
   font-weight: bold;
 }
@@ -324,6 +380,16 @@ bottom: 0px;
   position: absolute;
   left:-40px;
   bottom: 25px;
+  }
+.faq-satagra-star1{
+  position: absolute;
+  left:100px;
+  top: 85px;
+  }
+.faq-satagra-star2{
+  position: absolute;
+  right:300px;
+  bottom:5px;
   }
 /* faq section */
 
@@ -639,16 +705,14 @@ option{
   
 }
 .security{
- margin-bottom: 150px;
- height: 648px;
- width: 530px;
+
+
 }
 .man-padlock{
   top: 170px;
   bottom: 0;
   left: -55px;
-  height: 749px;
-  width: 559px;
+ 
 
 }
 .privacy-and-policy-inner{
@@ -681,6 +745,10 @@ line-height: 216.4% ;
 /* privacy */
 
 /* footer */
+.footer-container {
+  padding-top: 100px;
+  background-color: #100b20;
+}
 .middle-section a{
   color: #fff;
   text-decoration: none;
@@ -715,9 +783,19 @@ bottom: -15px;
   
   text-decoration: none;
 }
+.mont-14{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+
 .address,.phone-number {
   margin-top: 10px;
   
+}
+.footer-s-header{
+  font-size: 30px;
 }
 .address-text {
   margin-left: 20px;
@@ -732,8 +810,148 @@ bottom: -30px;
 .footer-text{
   font-size: 12px;
 }
+.follow-us{
+  font-size: 20px;
+}
 /* footer */
 
 
+
+
+
+
+/* media query */
+@media (max-width: 768px) {
+/* hero section */
+.left-hero{
+  text-align: center;
+}
+.hero-header{
+  font-size: 32px;
+  text-align: center;
+
+}
+.section-header-container{
+  text-align: center;
+  margin: 0 auto;
+}
+.chain{
+  height: 33px;
+  width: 33px;
+}
+.small-bulb{
+  height: 26px;
+  width: 18px;
+  top:35px;
+  right:70px;
+  
+}
+.explosion{
+  width: 22px;
+  height: 22px;
+}
+.left-hero .hero-sub-text{
+  width: 264px;
+  text-align: center;
+  font-size: 13px;
+  margin: 0 auto;
+ 
+}
+.hour, .minute,.second{
+  font-size: 48px;
+}
+.ignite-text-h3{
+  margin-top:20px;
+  font-size: 16px;
+
+
+}
+.ignite-container{
+  align-items: center;
+  justify-content: center !important;
+  text-align: center !important;
+}
+.bent-line{
+  width: 115px;
+  height: 7px;
+  top: 15px;
+  right: 10px;
+}
+
+
+
+
+/* hero section */
+
+
+
+
+
+/* intro section */
+.big-idea-bulb{
+width: 264px;
+height: 257px;
+
+}
+.bulb-text{
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.right-intro-header{
+  text-align: center;
+  margin-top: 40px;
+}
+.intro-text{
+  font-size: 13px;
+  text-align: center;
+  width: 321px;
+
+}
+/* intro section */
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* footer */
+  .footer-container{
+    margin-top: 0;
+    padding-left:20px;
+    padding-right:20px;
+    
+  }
+  .footer-s-header{
+    font-size: 20px;
+  }
+  .middle-section{
+    padding-top: 60px;
+    text-align: left;
+   
+  }
+  .right-section{
+    padding-top: 80px;
+    text-align: left;
+  }
+  .right-section-col{
+     align-items: start !important;
+  }
+  .middle-section-col{
+     justify-content: start !important;
+  }
+  .footer-rights{
+    margin-top: 0 !important;
+  }
+}
 
 

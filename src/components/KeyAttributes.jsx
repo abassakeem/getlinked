@@ -17,16 +17,16 @@ export default function KeyAttributes() {
 
               <Col sm={6}>
               <div className="position-relative ">
-                      <Image src={satagra} className='moving-star  attributes-satagra-star ' fluid />
+                      <Image src={satagra} className='blinking-sata  attributes-satagra-star ' fluid />
                       </div>
                 <div className="left-keyattributes">
                   <Image src={img} fluid />
                 </div>
                 <div className="position-relative ">
-                      <Image src={star1} className='moving-star  attributes-transparent-star ' fluid />
+                      <Image src={star1} className='blinking-trans-star  attributes-transparent-star ' fluid />
                       </div>
                       <div className="position-relative ">
-                      <Image src={star} className='moving-star  attributes-white-star ' fluid />
+                      <Image src={star} className='blinking-star  attributes-white-star ' fluid />
                       </div>
               </Col>
 

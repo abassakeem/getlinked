@@ -10,7 +10,7 @@ export default function Prizes() {
     <>
 
       <Container>
-        <div className="prizes-section-container vh-50 d-flex justify-content-center align-items-center">
+        <div className="prizes-section-container vh-100 d-flex justify-content-center align-items-center">
           <div className="prizes-row">
             <Row>
 

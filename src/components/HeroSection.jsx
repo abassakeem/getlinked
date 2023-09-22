@@ -17,15 +17,21 @@ export default function HeroSection() {
       <Container>
         <div className="hero-section-container vh-75 d-flex justify-content-center align-items-center">
           <div className="hero-row ">
+            <div className="d-flex justify-content-end align-items-end ignite-container">
+            <div className="ignite-text">
+                  <h3 className='ignite-text-h3'>Igniting a Revolution in HR Innovation</h3>
+                  <span className="bent-line"><Image src={line} fluid alt="line" /></span>
+                </div>
+                </div>
             <Row>
-
+            
               <Col md={6} className='d-flex flex-column justify-content-center'>
 
                 <div className="left-hero-container text-start ">
 
                   <div className="left-hero d-flex flex-column justify-content-center ">
-                    <Image src={star} className='moving-star star hero-white-star' fluid />
-                    <div className="position-relative ">
+                    <Image src={star} className='blinking-star star hero-white-star' fluid />
+                    <div className="position-relative section-header-container">
                     <h1 className='hero-header mt-5 '>getlinked Tech</h1><div className="small-bulb position-absolute"><Image src={bulb} className='bulb-img' fluid /></div>
                     <h2 className='hero-header'>Hackathon <span>1.0</span> <Image src={chain} className='chain' fluid />  <Image src={explosion} className='explosion' fluid /></h2>
                     </div>
@@ -35,7 +41,7 @@ export default function HeroSection() {
                         Register
                       </a></div>
                       <div className="position-relative">
-                      <Image src={star1} className='moving-star star hero-transparent-star ' fluid />
+                      <Image src={star1} className='blinking-trans-star star hero-transparent-star ' fluid />
                       </div>
                     <div className="timer">
                       <span className="hour">
@@ -52,12 +58,9 @@ export default function HeroSection() {
                 </div>
               </Col>
               <Col md={6}>
-                <div className="ignite-text">
-                  <h3>Igniting a Revolution in HR Innovation</h3>
-                  <span className="bent-line"><Image src={line} fluid alt="line" /></span>
-                </div>
+                
                 <div className="position-relative ">
-                      <Image src={star1} className='moving-star star hero-man-transparent-star ' fluid />
+                      <Image src={star1} className='blinking-trans-star star hero-man-transparent-star ' fluid />
                       </div>
                 <div className="right-hero ">
                   <div className="man-glasses-img">

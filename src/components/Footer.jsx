@@ -8,19 +8,19 @@ import { GoLocation } from 'react-icons/go';
 export default function Footer() {
     return (
         <>
-            <div className="footer-container d-flex ">
+            <div className="footer-container d-flex mt-5">
                 <Container >
                     <Row className="d-flex justify-content-center align-items-center ">
                         <Col sm={4} className='d-dlex position-relative '>
                             <div className="left-section d-flex flex-column mb-5 flex-grow-1 justify-content-center ">
-                                <h3 className='section-header'>get<span className='purple'>linked</span></h3>
+                                <h3 className='section-header footer-s-header'>get<span className='purple'>linked</span></h3>
                                 <p className='footer-text'>Getlinked Tech Hackathon is a technology innovation program
                                     established by a group of organizations with the aim of showcasing
                                     young and talented individuals in the field of technology</p>
                                 <p className='terms-of-use position-absolute'>Terms of Use <span className='purple'>|</span> Privacy Policy</p>
                             </div>
                         </Col>
-                        <Col sm={4} className='d-flex position-relative justify-content-center align-items-center'>
+                        <Col sm={4} className='d-flex middle-section-col position-relative justify-content-center align-items-center'>
                             <div className="middle-section  d-flex flex-column">
                                 <h6 className='purple mont text-start'>Useful Links</h6>
                                 <div className="timeline-link mb-3">
@@ -41,11 +41,11 @@ export default function Footer() {
                                 </div>
 
                                 <div className="social-media position-absolute">
-                                    <span className='purple mont '>follow us</span> <AiOutlineInstagram /> <RiTwitterXLine /> <FaFacebookF /> <FaLinkedinIn />
+                                    <span className='purple mont '>follow us</span> <span className="follow-us"> <AiOutlineInstagram /> <RiTwitterXLine /> <FaFacebookF /> <FaLinkedinIn /></span>
                                 </div>
                             </div>
                         </Col>
-                        <Col sm={4} className='d-flex flex-column justify-content-center align-items-center'>
+                        <Col sm={4} className='right-section-container right-section-col d-flex flex-column justify-content-start align-items-center'>
                             <div className="right-section mb-5">
                                 <h6 className='purple mont '>Contact Us</h6>
                                 <div className="phone-number">
@@ -63,7 +63,7 @@ export default function Footer() {
                             </div>
 
                         </Col>
-                        <Col sm={12} className='text-center mt-5'>
+                        <Col sm={12} className='text-center mt-5 footer-rights'>
                             <p className='copyright'>  all rights reserved. <AiOutlineCopyright /> getlinked Ltd </p>
                         </Col>
                     </Row>

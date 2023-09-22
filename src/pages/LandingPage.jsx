@@ -17,13 +17,13 @@ export default function LandingPage() {
         <Navbar/>
         <HeroSection/>
         <Introduction/>
-        <Rules/>
+         {/*<Rules/>
         <KeyAttributes/>
         <Faq/>
         <Timeline/>
         <Prizes/> 
          <Partners/>
-        <Privacy/>
+        <Privacy/> */}
       
 
         <Footer/>
