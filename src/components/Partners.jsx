@@ -25,27 +25,33 @@ export default function Partners() {
                             <Col xs={12}>
                                 <Container className='sponsors-container d-flex  justify-content-center align-items-center'>
                                     <Row className='d-flex justify-content-center align-items-center g-5 '>
-                                        <Col xs={4} className='position-relative'>
-                                            <div className="sponsor-logo libertyassured">
-                                                <Image src={libertyassured} className='libertyassured-partner' fluid/></div>
+                                        <Col xs={4} className=''>
+                                            <div className="position-relative">
+                                            <div className="sponsor-logo libertyassured ">
+                                                <Image src={libertyassured} className='libertyassured-partner' fluid/>
+                                                </div>
+                                                <div className="line line1"></div>
+                                                </div>
                                         </Col>
                                         <Col xs={4} className='position-relative'>
                                             <div className="sponsor-logo libertypay">
                                             <Image src={libertypay} fluid  className='libertypay-partner'/></div>
+                                            <div className="line line1"></div>
                                         </Col>
                                         <Col xs={4} className='position-relative'>
                                             <div className="sponsor-logo winwise">
                                             <Image src={winwise} fluid className='winwise-partner'/></div>
+                                            <div className="line line1"></div>
                                         </Col>
-                                        <Col xs={4} className='position-relative'>
+                                        <Col xs={4} className=''>
                                             <div className="sponsor-logo whisper">
                                             <Image src={whisper} fluid className='whisper-partner'/></div>
                                         </Col>
-                                        <Col xs={4} className='position-relative'>
+                                        <Col xs={4} className=''>
                                             <div className="sponsor-logo paybox">
                                             <Image src={paybox} fluid className='paybox-partner'/></div>
                                         </Col>
-                                        <Col xs={4} className='position-relative'>
+                                        <Col xs={4} className=''>
                                             <div className="sponsor-logo vuzual">
                                             <Image src={vuzual} fluid className='vuzual-partner'/></div>
                                         </Col>

@@ -16,14 +16,16 @@ export default function LandingPage() {
     <>
         <Navbar/>
         <HeroSection/>
+        <div className="section-end"></div>
         <Introduction/>
-         {/*<Rules/>
+        <div className="section-end"></div>
+        <Rules/>
         <KeyAttributes/>
         <Faq/>
-        <Timeline/>
+          <Timeline/>
         <Prizes/> 
-         <Partners/>
-        <Privacy/> */}
+        <Partners/>
+         <Privacy/>
       
 
         <Footer/>

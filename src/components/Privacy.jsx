@@ -7,7 +7,7 @@ import padlock from "./../assets/08 1.png"
 export default function Privacy() {
     return (
         <>
-            <div className="privacy-section section-end pb-5 d-flex justify-content-center align-items-center mb-5">
+            <div className="privacy-section  pb-5 d-flex justify-content-center align-items-center mb-5">
                 <Container>
                     <Row className='gap-5'>
                         <Col>
@@ -37,7 +37,7 @@ export default function Privacy() {
                                     <div className='mt-2 rule-2 mont mont-14 d-flex '><div className="check"> <FaCheckCircle className='check-button '/> </div> You are licensed to use the item available at any free source
                                         sites, for your project developement</div>
                                     <div className="register-btn-container-hero text-center pt-4">
-                                        <a className='nav-btn   register-btn-hero '>
+                                        <a className='nav-btn   register-btn-hero privacy-button '>
                                             Read more
                                         </a></div>
                                 </div>

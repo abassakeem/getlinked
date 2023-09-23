@@ -41,7 +41,7 @@ export default function Footer() {
                                 </div>
 
                                 <div className="social-media position-absolute">
-                                    <span className='purple mont '>follow us</span> <span className="follow-us"> <AiOutlineInstagram /> <RiTwitterXLine /> <FaFacebookF /> <FaLinkedinIn /></span>
+                                    <span className='purple mont '>Follow us</span> <span className="follow-us"> <AiOutlineInstagram /> <RiTwitterXLine /> <FaFacebookF /> <FaLinkedinIn /></span>
                                 </div>
                             </div>
                         </Col>
@@ -64,7 +64,7 @@ export default function Footer() {
 
                         </Col>
                         <Col sm={12} className='text-center mt-5 footer-rights'>
-                            <p className='copyright'>  all rights reserved. <AiOutlineCopyright /> getlinked Ltd </p>
+                            <p className='copyright'>  All rights reserved. <AiOutlineCopyright /> getlinked Ltd. </p>
                         </Col>
                     </Row>
                 </Container>

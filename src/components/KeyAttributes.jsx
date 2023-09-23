@@ -8,19 +8,20 @@ import img from "./../assets/8046554 1.png"
 export default function KeyAttributes() {
   return (
     <>
-      <div className="keyattributes-section-container vh-100">
+      <div className="keyattributes-section-container mt-5 mb-5 section-end vh-100">
         <Container>
 
-          <div className="keyattributes-row">
+          <div className="keyattributes-row mt-3">
             <Row>
+              
 
 
-              <Col sm={6}>
+              <Col sm={6} >
               <div className="position-relative ">
                       <Image src={satagra} className='blinking-sata  attributes-satagra-star ' fluid />
                       </div>
                 <div className="left-keyattributes">
-                  <Image src={img} fluid />
+                  <Image src={img} fluid className='keyattributes-image'/>
                 </div>
                 <div className="position-relative ">
                       <Image src={star1} className='blinking-trans-star  attributes-transparent-star ' fluid />
@@ -66,8 +67,8 @@ export default function KeyAttributes() {
                         </p>
                         </li>
                       </ul>
-                      <div className="register-btn-container-hero mt-5 mb-5">
-                        <a className='nav-btn   register-btn-hero '>
+                      <div className="register-btn-container-hero  mb-5">
+                        <a className='nav-btn   register-btn-hero key-attributes-btn'>
                           Read More
                         </a></div>
 

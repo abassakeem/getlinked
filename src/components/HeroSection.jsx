@@ -15,7 +15,7 @@ export default function HeroSection() {
     <>
 
       <Container>
-        <div className="hero-section-container vh-75 d-flex justify-content-center align-items-center">
+        <div className="hero-section-container  vh-75 d-flex justify-content-center align-items-center">
           <div className="hero-row ">
             <div className="d-flex justify-content-end align-items-end ignite-container">
             <div className="ignite-text">

@@ -6,12 +6,13 @@ import star from "./../assets/star.png"
 export default function Rules() {
   return (
     <>
-  <div className="rules-section-container vh-50">
+  <div className="rules-section-container section-end vh-50">
       <Container>
       
           <div className="rules-row">
             <Row>
-              <Col sm={6} className='d-flex justify-content-center align-items-center'>
+              
+              <Col sm={6} className='order-2 order-md-1 d-flex justify-content-center align-items-center'>
                 <div className="left-rules-container">
                   <div className="left-rules">
                     <div className="left-rules-header section-header">
@@ -39,7 +40,7 @@ export default function Rules() {
               </Col>
 
 
-              <Col sm={6}>
+              <Col sm={6} className='order-1 order-md-2'>
                 <div className="right-intro">
                   <Image src={img} fluid />
                 </div>

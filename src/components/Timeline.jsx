@@ -1,133 +1,122 @@
 import React from "react";
-import {
-  VerticalTimeline,
-  VerticalTimelineElement,
-} from "react-vertical-timeline-component";
-import { motion } from "framer-motion";
-
-import "react-vertical-timeline-component/style.min.css";
-
-import { styles } from "../styles";
+import { Container } from "react-bootstrap";
 
 
-import { textVariant } from "../utils/motion";
-
-
-
-const ExperienceCard = ({ experience }) => {
-
-  
-  
+const Timeline = () => {
   return (
-
-    <VerticalTimelineElement
-      contentStyle={{
-        background: "transparent",
-        color: "#fff",
-        margin: "",
-      }}
-      className=""
-      contentArrowStyle={{ borderRight: "7px solid  #232631" }}
-      date={experience.date}
-      iconStyle={{ background: experience.iconBg }}
-      icon={
-        <div className='d-flex justify-content-center text-center align-items-center w-full h-full'>
-          <p
-           
-            className='w-[60%] h-[60%] m-3 object-contain'
-          >{experience.numba}</p>
-        </div>
-      }
-    >
-      <div className="">
-        <h3 className='text-white  text-[24px] font-bold'>{experience.title}</h3>
-        <p
-          className='text-secondary text-[16px] font-semibold'
-          style={{ margin: 0 }}
-        >
-          {experience.company_name}
+    <section className="timeline">
+      <Container>
+      <div className="header">
+        <h1>Timeline</h1>
+        <p>
+          Here is the breakdown of the time we anticipate using for the upcoming
+          event.
         </p>
       </div>
-
-     
-    </VerticalTimelineElement>
+      <div className="timeSection">
+        <div className="time">
+          <div className="text">
+            <h3>Hackathon Announcement</h3>
+            <p>
+              The getlinked tech hackathon 1.0 is formally announced to the
+              general public and teams begin to get ready to register
+            </p>
+          </div>
+          <h3 className="date">November 18, 2023</h3>
+        </div>
+        <div className="time2">
+          <div className="text2">
+            <h3>Teams Registration begins</h3>
+            <p>
+              Interested teams can now show their interest in the getlinked tech
+              hackathon 1.0 2023 by proceeding to register
+            </p>
+          </div>
+          <h3 className="date">November 18, 2023</h3>
+        </div>
+        <div className="time">
+          <div className="text">
+            <h3>Teams Registration ends</h3>
+            <p>Interested Participants are no longer Allowed to register</p>
+          </div>
+          <h3 className="date">November 18, 2023</h3>
+        </div>
+        <div className="time2">
+          <div className="text2">
+            <h3>Announcement of the accepted teams and ideas</h3>
+            <p>
+              All teams whom idea has been accepted into getlinked tech
+              hackathon 1.0 2023 are formally announced
+            </p>
+          </div>
+          <h3 className="date">November 18, 2023</h3>
+        </div>
+        <div className="time">
+          <div className="text">
+            <h3>Getlinked Hackathon 1.0 Offically Begins</h3>
+            <p>
+              Accepted teams can now proceed to build their ground breaking
+              skill driven solutions
+            </p>
+          </div>
+          <h3 className="date">November 18, 2023</h3>
+        </div>
+        <div className="time2">
+          <div className="text2">
+            <h3>Demo Day</h3>
+            <p>
+              Teams get the opportunity to pitch their projects to judges. The
+              winner of the hackathon will also be announced on this day
+            </p>
+          </div>
+          <h3 className="date">November 18, 2023</h3>
+        </div>
+        <div className="center">
+          <div className="numberSec">
+            <div className="line1"></div>
+            <h2 className="number">1</h2>
+            <div className="line2"></div>
+            <h2 className="number">2</h2>
+            <div className="line2"></div>
+            <h2 className="number">3</h2>
+            <div className="line2"></div>
+            <h2 className="number">4</h2>
+            <div className="line2"></div>
+            <h2 className="number">5</h2>
+            <div className="line2"></div>
+            <h2 className="number">6</h2>
+          </div>
+        </div>
+        <div className="left">
+          <div className="sect">
+            <div className="line1"></div>
+            <h2 className="number">1</h2>
+          </div>
+          <div className="sect">
+            <div className="line1"></div>
+            <h2 className="number">2</h2>
+          </div>
+          <div className="sect">
+            <div className="line1"></div>
+            <h2 className="number">3</h2>
+          </div>
+          <div className="sect">
+            <div className="line1"></div>
+            <h2 className="number">4</h2>
+          </div>
+          <div className="sect">
+            <div className="line1"></div>
+            <h2 className="number">5</h2>
+          </div>
+          <div className="sect">
+            <div className="line1"></div>
+            <h2 className="number">6</h2>
+          </div>
+        </div>
+      </div>
+      </Container>
+    </section>
   );
 };
 
-const Experience = () => {
-  const experiences = [
-    {
-      title: "Hackathon Announcement",
-      company_name: "The getlinked tech hackathon 1.0 is formally announced to the general public and teams begin to get ready to register",
-      numba: 1,
-      iconBg: "#903aff",
-      date: "November 18, 2023",
-      
-    },
-    {
-      title: "Teams Registration begins",
-      company_name: "Interested teams can now show their interest in the getlinked tech hackathon 1.0 2023 by proceeding to register",
-      numba: 2,
-      iconBg: "#903aff",
-      date: "November 18, 2023",
-      
-    },
-    {
-      title: "Teams Registration ends",
-      company_name: "Interested Participants are no longer Allowed to register",
-      numba: 3,
-      iconBg: "#903aff",
-      date: "November 18, 2023",
-      
-    },
-    {
-      title: "Announcement of the accepted teams and ideas",
-      company_name: "All teams whom idea has been accepted into getlinked tech hackathon 1.0 2023 are formally announced",
-      numba: 4,
-      iconBg: "#903aff",
-      date: "November 18, 2023",
-      
-    },
-    {
-      title: "Getlinked Hackathon 1.0 Offically Begins",
-      company_name: "Accepted teams can now proceed to build their ground breaking skill driven solutions",
-      numba: 5,
-      iconBg: "#903aff",
-      date: "November 18, 2023",
-      
-    },
-    {
-      title: "Demo Day",
-      company_name: "Teams get the opportunity to pitch their projects to judges. The winner of the hackathon will also be announced on this day",
-      numba: 6,
-      iconBg: "#903aff",
-      date: "November 18, 2023",
-      
-    },
-  ];
-  return (
-    <>
-      <motion.div variants={textVariant()}>
-        <h3 className="clash text-center">
-         Timeline
-        </h3>
-        <p className='text-center'>
-          Here is the breakdown of the time we anticipate <br/>
-          using for the upcoming event
-        </p>
-      </motion.div>
-      <div className='mt-5 flex flex-col'>
-        <VerticalTimeline>
-          {experiences.map((experience, index) => (
-            <ExperienceCard
-              key={`experience-${index}`}
-              experience={experience}
-                          />
-          ))}
-        </VerticalTimeline>
-      </div> 
-    </>
-  )
-}
-
-export default Experience
+export default Timeline;

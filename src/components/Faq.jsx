@@ -8,7 +8,7 @@ import star1 from "./../assets/star-transparent.png"
 export default function Faq() {
   return (
     <>
- <div className="faq-section-container vh-100">
+ <div className="faq-section-container section-end vh-m100">
       <Container>
        
           <div className="rules-row">
