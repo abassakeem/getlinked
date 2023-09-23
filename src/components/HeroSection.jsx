@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Col, Container, Image, Row } from 'react-bootstrap'
-
+import { motion } from "framer-motion";
 import img from "./../assets/world-stars.png"
 import star1 from "./../assets/star-transparent.png"
 import star from "./../assets/star.png"
@@ -56,10 +56,10 @@ export default function HeroSection() {
             <div className="ignite-text">
               
                   <h3 className='ignite-text-h3'>I{text}</h3>
-                  <div className="">
+                
                   <span className="bent-line">
                     <Image src={line} fluid alt="line" /></span></div>
-                </div>
+                
                 </div>
             <Row>
             
@@ -69,11 +69,24 @@ export default function HeroSection() {
 
                   <div className="left-hero d-flex flex-column justify-content-center ">
                     <Image src={star} className='blinking-star star hero-white-star' fluid />
-                    <div className="position-relative section-header-container">
+                    <motion.div 
+                    initial={{
+                      opacity: 0,
+                      y: 25,
+                    }}
+                    whileInView={{
+                      opacity: 1,
+                      y: 0,
+                    }}
+                    transition={{
+                      duration: 1,
+                      delay: 1,
+                    }}
+                    className="position-relative section-header-container">
                       <Image fluid src={light} className='hero-light d-none d-md-block'/>
                     <h1 className='hero-header mt-5 '>getlinked Tech</h1><div className="small-bulb position-absolute"><Image src={bulb} className='bulb-img' fluid /></div>
                     <h2 className='hero-header'>Hackathon <span>1.0</span> <Image src={chain} className='chain' fluid />  <Image src={explosion} className='explosion' fluid /></h2>
-                    </div>
+                    </motion.div>
                     <p className='hero-sub-text'>Participate in getlinked tech Hackathon 2023 stand a chance to win a Big prize</p>
                     <div className="register-btn-container-hero mt-5 mb-5">
                       <a className='nav-btn   register-btn-hero '>
@@ -96,7 +109,7 @@ export default function HeroSection() {
                   </div>
                 </div>
               </Col>
-              <Col md={6}>
+              <Col md={6} className='p-0 m-0'>
                 
                 <div className="position-relative ">
                       <Image src={star1} className='blinking-trans-star star hero-man-transparent-star ' fluid />

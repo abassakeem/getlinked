@@ -1,4 +1,6 @@
 import React from 'react'
+import 'animate.css';
+import { motion } from "framer-motion";
 import img from "./../assets/7450159 1.png"
 import { Col, Container, Image, Row } from 'react-bootstrap'
 import star1 from "./../assets/star-transparent.png"
@@ -23,7 +25,20 @@ export default function Rules() {
                       <Image src={star1} className='blinking-trans-star  rules-transparent-star ' fluid />
                       </div>
                     </div>
-                    <div className="left-rules-sub-text section-subtext">
+                    <motion.div
+                    initial={{
+                      opacity: 0,
+                      y: 25,
+                    }}
+                    whileInView={{
+                      opacity: 1,
+                      y: 0,
+                    }}
+                    transition={{
+                      duration: 0.5,
+                      delay: 0.5,
+                    }}
+                    className="left-rules-sub-text section-subtext animate__fadeInLeftBig">
                       <p>Our tech hackathon is a melting pot of visionaries, and its purpose is as
                         clear as day: to shape the future. Whether you're a coding genius, a
                         design maverick, or a concept wizard, you'll have the chance to transform
@@ -33,7 +48,7 @@ export default function Rules() {
                         <div className="position-relative ">
                       <Image src={star} className='blinking-star  rules-star ' fluid />
                       </div>
-                    </div>
+                    </motion.div>
 
                   </div>
 

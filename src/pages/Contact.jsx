@@ -6,7 +6,7 @@ export default function Contact() {
   return (
     <>
     <div className="entire-contact ">
-        <NavbarSection/>
+     
     <ContactSection/>
     </div>
     

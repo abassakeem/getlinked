@@ -5,6 +5,7 @@ import { FaCheckCircle } from "react-icons/fa"
 import security from "./../assets/Vector.png"
 import padlock from "./../assets/08 1.png"
 import star from "./../assets/star.png"
+import { motion } from "framer-motion";
 import satagra from "./../assets/sata gra.png"
 import star1 from "./../assets/star-transparent.png"
 import light from "./../assets/Purple-Lens-Flare-PNGprivacy.png"
@@ -33,7 +34,21 @@ export default function Privacy() {
                             </div>
 
                             <div className="privacy-and-policy mt-3">
-                                <div className="privacy-and-policy-inner">
+                                <motion.div
+                                 initial={{
+                                    opacity: 0,
+                                    y: 25,
+                                  }}
+                                  whileInView={{
+                                    opacity: 1,
+                                    y: 0,
+                                  }}
+                                  transition={{
+                                    duration: 0.5,
+                                    delay: 0.50,
+                                  }}
+                                
+                                className="privacy-and-policy-inner">
 
 
                                     <p className='privacy-text '>At getlinked tech Hackathon 1.0, we value your privacy
@@ -52,7 +67,7 @@ export default function Privacy() {
                                         <a className='nav-btn   register-btn-hero privacy-button '>
                                             Read more
                                         </a></div>
-                                </div>
+                                </motion.div>
                                 <div className="position-relative privacy-star-3">
                                     <Image src={satagra} className='blinking-trans-star  privacy-sata-star ' fluid />
                                 </div>

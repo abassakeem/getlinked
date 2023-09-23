@@ -6,6 +6,7 @@ import satagra from "./../assets/sata gra.png"
 import img from "./../assets/8046554 1.png"
 import light from "./../assets/Purple-Lens-Flare-PNGkey-1.png"
 import light1 from "./../assets/Purple-Lens-Flare-PNGkey-2.png"
+import { motion } from "framer-motion";
 
 export default function KeyAttributes() {
   return (
@@ -40,7 +41,20 @@ export default function KeyAttributes() {
                     <div className="right-keyattributes-header section-header">
                       <h2>Judging Criteria <br /> <span className='section-header-span'> Key attributes</span></h2>
                     </div>
-                    <div className="right-keyattributes-sub-text section-subtext">
+                    <motion.div
+                     initial={{
+                      opacity: 0,
+                      y: 25,
+                    }}
+                    whileInView={{
+                      opacity: 1,
+                      y: 0,
+                    }}
+                    transition={{
+                      duration: 0.5,
+                      delay: 0.50,
+                    }}
+                    className="right-keyattributes-sub-text section-subtext">
                       <ul className='m-0 p-0'>
                         <li><p className='key-attributes-li'><span className='list-attributes-header'>Innovation and creativity</span>: Evaluate the uniqueness and creativity of the
                           solution. Consider whether it addresses a real-world problem in a novel
@@ -48,9 +62,9 @@ export default function KeyAttributes() {
                         </p>
                         </li>
 
-                        <li><p className='key-attributes-li'><span className='list-attributes-header'>Innovation and creativity</span>: Evaluate the uniqueness and creativity of the
-                          solution. Consider whether it addresses a real-world problem in a novel
-                          way or introduces innovative features.
+                        <li><p className='key-attributes-li'><span className='list-attributes-header'>Functionality</span>:Assess how well the solution works. Does it perform its 
+intended functions effectively and without major issues? Judges would
+consider the completeness and robustness of the solution.
                         </p>
                         </li>
                         <li><p className='key-attributes-li'><span className='list-attributes-header'>Impact and Relevance: </span>: Determine the potential impact of the solution
@@ -75,7 +89,7 @@ export default function KeyAttributes() {
                           Read More
                         </a></div>
 
-                    </div>
+                    </motion.div>
 
                   </div>
 

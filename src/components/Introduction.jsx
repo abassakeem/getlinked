@@ -1,4 +1,5 @@
 import React from 'react'
+import { motion } from "framer-motion";
 import satagra from "./../assets/sata gra.png"
 import img from "./../assets/the big idea 1.png"
 import arrow from "./../assets/arrow.png"
@@ -33,7 +34,7 @@ export default function Introduction() {
 
               </Col>
               <Col sm={6} className='d-flex justify-content-center align-items-center'>
-                <div className="right-intro-container">
+                <div className="right-intro-container animate__fadeInRight">
                   <div className="right-intro">
                     <div className="right-intro-header section-header">
                       <h2>Intoduction to getlinked <br /> <span className='section-header-span'> techHackathon 1.0</span></h2>
@@ -41,7 +42,20 @@ export default function Introduction() {
                     <div className="position-relative">
                       <Image src={satagra} className='blinking-sata satagra-star1 intro-satagra-star1 ' fluid />
                       </div>
-                    <div className="right-intro-sub-text section-subtext">
+                    <motion.div 
+                     initial={{
+                      opacity: 0,
+                      y: 25,
+                    }}
+                    whileInView={{
+                      opacity: 1,
+                      y: 0,
+                    }}
+                    transition={{
+                      duration: 0.5,
+                      delay: 0.50,
+                    }}
+                    className="right-intro-sub-text section-subtext">
                       <p className='intro-text'>Our tech hackathon is a melting pot of visionaries, and its purpose is as
                         clear as day: to shape the future. Whether you're a coding genius, a
                         design maverick, or a concept wizard, you'll have the chance to transform
@@ -49,7 +63,7 @@ export default function Introduction() {
                         of technology, and creating solutions that can change the world,
                         that's what we're all about!</p>
 
-                    </div>
+                    </motion.div>
 
                   </div>
 

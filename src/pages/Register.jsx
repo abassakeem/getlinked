@@ -5,7 +5,7 @@ import NavbarSection from '../components/NavbarSection'
 export default function Register() {
   return (
     <>
-    <NavbarSection/>
+  
     <RegisterSection/>
     
     </>

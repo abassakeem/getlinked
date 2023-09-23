@@ -14,7 +14,7 @@ import Timeline from '../components/Timeline'
 export default function LandingPage() {
   return (
     <>
-        <Navbar/>
+        
         <HeroSection/>
         <div className="section-end"></div>
         <Introduction/>
