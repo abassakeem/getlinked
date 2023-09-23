@@ -1,8 +1,11 @@
 import React from 'react'
-import { Col, Container, Row } from 'react-bootstrap'
+import { Col, Container, Image, Row } from 'react-bootstrap'
 import { AiOutlineInstagram, AiOutlineCopyright } from 'react-icons/ai';
 import { BiPhoneCall } from 'react-icons/bi';
 import { RiTwitterXLine } from 'react-icons/ri';
+import star from "./../assets/star.png"
+import satagra from "./../assets/sata gra.png"
+import star1 from "./../assets/star-transparent.png"
 import { FaFacebookF, FaLinkedinIn } from 'react-icons/fa';
 import { GoLocation } from 'react-icons/go';
 export default function Footer() {
@@ -10,6 +13,9 @@ export default function Footer() {
         <>
             <div className="footer-container d-flex mt-5">
                 <Container >
+                <div className="position-relative privacy-star-8">
+                                    <Image src={star} className='blinking-star  footer-star1 ' fluid />
+                                </div>
                     <Row className="d-flex justify-content-center align-items-center ">
                         <Col sm={4} className='d-dlex position-relative '>
                             <div className="left-section d-flex flex-column mb-5 flex-grow-1 justify-content-center ">
@@ -63,6 +69,15 @@ export default function Footer() {
                             </div>
 
                         </Col>
+                        <div className="position-relative privacy-star-8">
+                                    <Image src={satagra} className='blinking-star  footer-satagra-star d-none d-md-block ' fluid />
+                                </div>
+                        <div className="position-relative privacy-star-8">
+                                    <Image src={star1} className='blinking-trans-star  footer-trans-star ' fluid />
+                                </div>
+                        <div className="position-relative privacy-star-8">
+                                    <Image src={star} className='blinking-star  footer-star3 ' fluid />
+                                </div>
                         <Col sm={12} className='text-center mt-5 footer-rights'>
                             <p className='copyright'>  All rights reserved. <AiOutlineCopyright /> getlinked Ltd. </p>
                         </Col>

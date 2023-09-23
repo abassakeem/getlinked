@@ -4,11 +4,13 @@ import star1 from "./../assets/star-transparent.png"
 import star from "./../assets/star.png"
 import satagra from "./../assets/sata gra.png"
 import img from "./../assets/8046554 1.png"
+import light from "./../assets/Purple-Lens-Flare-PNGkey-1.png"
+import light1 from "./../assets/Purple-Lens-Flare-PNGkey-2.png"
 
 export default function KeyAttributes() {
   return (
     <>
-      <div className="keyattributes-section-container mt-5 mb-5 section-end vh-100">
+      <div className="keyattributes-section-container mt-5 mb-5 section-end vh-100 position-relative">
         <Container>
 
           <div className="keyattributes-row mt-3">
@@ -29,6 +31,7 @@ export default function KeyAttributes() {
                       <div className="position-relative ">
                       <Image src={star} className='blinking-star  attributes-white-star ' fluid />
                       </div>
+                     < Image fluid src={light} className='key-light'/>
               </Col>
 
               <Col sm={6} className='d-flex justify-content-center align-items-center'>
@@ -77,6 +80,7 @@ export default function KeyAttributes() {
                   </div>
 
                 </div>
+                < Image fluid src={light1} className='key-light2'/>
 
               </Col>
 

@@ -19,12 +19,12 @@ export default function Introduction() {
                   <div className="position-relative">
                       <Image src={satagra} className='blinking-sata satagra-star intro-satagra-star ' fluid />
                       </div>
-                      <div className="bulb">
+                      <div className="bulb posiiton-relative">
 
                   
 
                     <Image src={img} fluid className='big-idea-bulb'/>
-                    <span className='bulb-text'>The Big Idea!</span>
+                    <p className='bulb-text'>The Big Idea!</p>
                     <div className="position-relative">
                       <Image src={arrow} className='arrow intro-arrow ' fluid />
                       </div>
