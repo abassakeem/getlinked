@@ -14,7 +14,7 @@ export default function Faq() {
        
           <div className="rules-row">
             <Row>
-              <Col sm={6}>
+              <Col sm={6} className='px-4'>
                 <div className="left-faq-container">
                   <div className="left-faq mt-5">
                     <div className="left-faq-header section-header">

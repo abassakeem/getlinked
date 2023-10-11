@@ -12,7 +12,7 @@ export default function KeyAttributes() {
   return (
     <>
       <div className="keyattributes-section-container mt-5 mb-5 section-end vh-100 position-relative">
-        <Container>
+        <Container className='px-3'>
 
           <div className="keyattributes-row mt-3">
             <Row>

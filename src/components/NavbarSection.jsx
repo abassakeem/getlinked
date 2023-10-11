@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
 import Form from "react-bootstrap/Form";
@@ -11,6 +11,19 @@ import { Image } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 export default function NavbarSection() {
+  
+  const [showOffcanvas, setShowOffcanvas] = useState(false);
+
+  const handleCloseOffcanvas = () => {
+    setShowOffcanvas(false);
+  };
+
+  const handleToggleOffcanvas = () => {
+    if (window.innerWidth < 992) {
+      setShowOffcanvas((prevShowOffcanvas) => !prevShowOffcanvas);
+    }
+  };
+
   const handleTimeline = () => {
     const element = document.querySelector(".timeline-container-wrap");
     window.scrollTo({
@@ -18,7 +31,9 @@ export default function NavbarSection() {
       left: 0,
       behavior: "smooth",
     });
+    handleCloseOffcanvas(); // Close the Offcanvas after clicking the link
   };
+
   const handleIntro = () => {
     const element = document.querySelector(".intro-section-container");
     window.scrollTo({
@@ -26,7 +41,9 @@ export default function NavbarSection() {
       left: 0,
       behavior: "smooth",
     });
+    handleCloseOffcanvas(); // Close the Offcanvas after clicking the link
   };
+
   const handleFaq = () => {
     const element = document.querySelector(".faq-section-container");
     window.scrollTo({
@@ -34,51 +51,29 @@ export default function NavbarSection() {
       left: 0,
       behavior: "smooth",
     });
+    handleCloseOffcanvas(); // Close the Offcanvas after clicking the link
   };
+
   return (
     <>
-      {/* <Navbar expand="sm" className=" nav-section ">
-      <Container >
-        <Navbar.Brand href="#" className='nav-brand'>get<span className='navbrand-span-linked'>linked</span></Navbar.Brand>
-        <Navbar.Toggle aria-controls="navbarScroll" />
-        <Navbar.Collapse id="navbarScroll" className="justify-content-end gap-5">
-        <Nav  >
-        <Nav.Item>
-          <Nav.Link  className='nav-btn timeline-btn'>Timeline</Nav.Link>
-        </Nav.Item>
-        <Nav.Item>
-          <Nav.Link  className='nav-btn overview-btn'>Overview</Nav.Link>
-        </Nav.Item>
-        <Nav.Item>
-          <Nav.Link  className='nav-btn faq-btn'>FAQs</Nav.Link>
-        </Nav.Item>
-        <Nav.Item>
-          <Nav.Link  className='nav-btn contact-btn'>Contact</Nav.Link>
-        </Nav.Item>
-        <Nav.Item className=' register-btn-container m-0 m-auto '>
-          <a  className='nav-btn  register-btn'>
-            Register
-          </a>
-        </Nav.Item>
-      </Nav>
-          
-        </Navbar.Collapse>
-      </Container>
-    </Navbar> */}
-
-      {["md"].map((expand) => (
+      {["lg"].map((expand) => (
         <Navbar key={expand} expand={expand} className="nav-section mb-3">
-          <Container>
-            <Navbar.Brand href="/" className="nav-brand">
-              get<span className="navbrand-span-linked">linked</span>
+          <Container fluid className="px-5">
+            <Navbar.Brand className="nav-brand p-0 brand">
+              <Link to="/" className="clash mont-white">
+                get<span className="navbrand-span-linked">linked</span>
+              </Link>
             </Navbar.Brand>
             <Navbar.Toggle
               aria-controls={`offcanvasNavbar-expand-${expand}`}
-              className=""
+              onClick={handleToggleOffcanvas} // Toggle Offcanvas when the toggle button is clicked
             >
+              {" "}
               <Image src={hamburger} fluid className="hamburger" />
             </Navbar.Toggle>
             <Navbar.Offcanvas
+              show={showOffcanvas}
+              onHide={handleCloseOffcanvas} // Close Offcanvas when the close button is clicked
               className="bg-dark"
               id={`offcanvasNavbar-expand-${expand}`}
               aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
@@ -90,31 +85,43 @@ export default function NavbarSection() {
                 ></Offcanvas.Title>
               </Offcanvas.Header>
               <Offcanvas.Body>
-                <Nav className="justify-content-end flex-grow-1  ">
+                <Nav className="justify-content-end flex-grow-1">
                   <Nav.Item>
                     <Nav.Link
                       onClick={handleTimeline}
-                      className="nav-btn timeline-btn"
+                      className="nav-btn overview-btn"
                     >
-                      <Link to="/" className="mont-white">Timeline</Link>
+                      <Link to="/" className="mont-white">
+                        Timeline
+                      </Link>
                     </Nav.Link>
                   </Nav.Item>
                   <Nav.Item onClick={handleIntro}>
                     <Nav.Link className="nav-btn overview-btn">
-                    <Link to="/" className="mont-white">Overview</Link>
+                      <Link to="/" className="mont-white">
+                        Overview
+                      </Link>
                     </Nav.Link>
                   </Nav.Item>
                   <Nav.Item onClick={handleFaq}>
-                    <Nav.Link className="nav-btn faq-btn"><Link to="/" className="mont-white">FAQs</Link></Nav.Link>
+                    <Nav.Link className="nav-btn faq-btn">
+                      <Link to="/" className="mont-white">
+                        FAQs
+                      </Link>
+                    </Nav.Link>
                   </Nav.Item>
-                  <Nav.Item>
+                  <Nav.Item onClick={handleToggleOffcanvas}>
                     <Nav.Link className="nav-btn contact-btn">
-                    <Link to="/contact" className="mont-white">
-                      Contact
-                    </Link></Nav.Link>
+                      <Link to="/contact" className="mont-white">
+                        Contact
+                      </Link>
+                    </Nav.Link>
                   </Nav.Item>
-                  <Nav.Item className=" register-btn-container d-flex align-items-center justift-contnet-center">
-                    <Link to="/register" className="nav-btn register-btn">
+                  <Nav.Item onClick={handleToggleOffcanvas}  className=" register-btn-container d-flex align-items-center justift-contnet-center">
+                    <Link
+                      to="/register"
+                      className="nav-btn register-btn nav-register-btn"
+                    >
                       Register
                     </Link>
                   </Nav.Item>

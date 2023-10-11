@@ -62,7 +62,7 @@ export default function Prizes() {
                       
                         <div className="silver position-relative">
                         <div className="position-relative ">
-                      <Image src={star} className='blinking-star  prizes-star2 ' fluid />
+                      <Image src={star} className='blinking-star  prizes-star2 d-none d-md-block' fluid />
                       </div>
                         <Image src={silver} fluid />
                         <div className="text">
@@ -82,7 +82,7 @@ export default function Prizes() {
                         </div>
                         <div className="bronze">
                         <div className="position-relative ">
-                      <Image src={star} className='blinking-star  prizes-star3 ' fluid />
+                      <Image src={star} className='blinking-star  prizes-star3 d-none d-md-block' fluid />
                       </div>
                         <Image src={bronze} fluid />
                         <div className="text">

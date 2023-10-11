@@ -38,10 +38,13 @@ export default function ContactSection() {
 
   return (
     <>
-      <div className="vh-100 contact-container d-flex justify-content-center align-items-center mt-5">
-        <Container>
-          <Row className="  ">
-            <Col className="d-none d-md-block">
+      <div className="contact-container d-flex justify-content-center align-items-center">
+        <Container
+          fluid
+          className="d-flex justify-content-center align-items-center"
+        >
+          <Row className="d-flex justify-content-center align-items-center gap-5 px-3 contactRow w-100">
+            <Col className="d-none d-lg-block">
               <Image src={light} fluid className="light-flare-reg1" />
               <h3 className="contact-header">Get in touch</h3>
               <div className="contact-information">
@@ -81,43 +84,47 @@ export default function ContactSection() {
 
                 <div className="contact-form mt-3 ">
                   <form className="d-flex flex-column pt-3 justify-content-start align-items-start">
-                    <div>
+                    <Col md={12} xs={12} className="mb-3 w-100">
                       <input
+                        onChange={(e) => handleChange("email", e.target.value)}
+                        name="email"
                         type="email"
                         placeholder="Mail"
-                        className="mt-3"
-                        onChange={(e) => handleChange("email", e.target.value)}
+                        className="form-control"
                       />
-                    </div>
-                    <div>
+                    </Col>
+                    <Col md={12} xs={12} className="mb-3 w-100">
                       <input
-                        type="text"
-                        placeholder="Phone Number"
                         onChange={(e) =>
                           handleChange("phone_number", e.target.value)
                         }
-                      />
-                    </div>
-                    <div>
-                      <input
+                        name="phone_number"
                         type="text"
-                        placeholder="First Name"
-                        className="mt-3"
+                        placeholder="Phone Number"
+                        className="form-control"
+                      />
+                    </Col>
+                    <Col md={12} xs={12} className="mb-3 w-100">
+                      <input
                         onChange={(e) =>
                           handleChange("first_name", e.target.value)
                         }
+                        name="first_name"
+                        type="text"
+                        placeholder="First Name"
+                        className="form-control"
                       />
-                    </div>
+                    </Col>
 
-                    <div>
+                    <Col md={12} xs={12} className="mb-3 w-100">
                       <textarea
                         placeholder="Message"
-                        className="mt-5"
+                        className="mt-3"
                         onChange={(e) =>
                           handleChange("message", e.target.value)
                         }
                       />
-                    </div>
+                    </Col>
 
                     <button
                       type="button"
@@ -128,16 +135,18 @@ export default function ContactSection() {
                   </form>
                 </div>
               </div>
-
-              <Image
-                src={light2}
-                fluid
-                className=" light-flare light-flare-reg2"
-              />
+              <div className="share2">
+                <p className="share-on">Share on </p>
+                <div className="social-media">
+                  <AiOutlineInstagram /> <RiTwitterXLine /> <FaFacebookF />{" "}
+                  <FaLinkedinIn />
+                </div>
+              </div>
             </Col>
           </Row>
         </Container>
       </div>
+      {/* <Image src={light2} fluid className=" light-flare light-flare-contact" /> */}
     </>
   );
 }

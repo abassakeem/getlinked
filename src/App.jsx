@@ -11,12 +11,13 @@ function App() {
 
   return (
     <>
-     <Router><NavbarSection/>
+     <Router>
+      <NavbarSection/>
       <Routes>
       
         <Route exact path="/" element={<LandingPage />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/register" element={<Register />} />
+        <Route exact path="/contact" element={<Contact />} />
+        <Route exact path="/register" element={<Register />} />
       </Routes>
     </Router>
      

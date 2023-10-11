@@ -4,7 +4,7 @@ import { Container } from "react-bootstrap";
 
 const Timeline = () => {
   return (
-    <section className="timeline timeline-container-wrap">
+    <section className="timeline timeline-container-wrap" id="timeline">
       <Container>
       <div className="header">
         <h1>Timeline</h1>

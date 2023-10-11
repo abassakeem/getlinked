@@ -101,7 +101,6 @@ a {
 .nav-section {
   border-bottom: 1px solid rgba(255, 255, 255, 0.18);
   padding-top: 30px;
-  padding-bottom: 15px;
 }
 
 .timeline-btan,
@@ -117,7 +116,6 @@ button {
 
 .register-btn {
   width: 172px;
-
   margin: 0 auto;
   text-decoration: none;
   cursor: pointer;
@@ -172,6 +170,10 @@ button.btn-close {
 
 }
 
+.nav-section .brand a:hover {
+  color: white;
+}
+
 .nav-btn.register-btn {
   /* width: 172px;
   height: 53px; */
@@ -183,9 +185,21 @@ button.btn-close {
   color: #fff;
 }
 
+.nav-register-btn:hover {
+  background: linear-gradient(to left, #ff34b9, #ff26b9 #d434fe, #903aff) !important;
+  transition: 0.2s;
+
+
+}
+
+.register-btn-container a:hover {
+  color: #000 !important;
+}
+
 /* nav  styles */
 
 /* hero-styles */
+
 .rotate {
   z-index: -1;
 
@@ -1687,18 +1701,17 @@ button.btn-close {
 }
 
 .form-section {
-  width: 558px;
+  width: fit-content;
   margin: 0 auto;
   border-radius: 12px;
   background: rgba(255, 255, 255, 0.03);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  padding: 3rem;
-
+  padding: 1rem;
 }
 
 .contact-form form {
   margin: 0 auto;
-  width: 437px;
+  /* width: 437px ; */
 }
 
 .contact-form input,
@@ -1710,7 +1723,7 @@ button.btn-close {
   padding: 10px;
   color: #fff;
   height: 47px;
-  width: 437px;
+  width: 100%;
   border-radius: 4px;
 }
 
@@ -1767,6 +1780,10 @@ button.btn-close {
 
 }
 
+.share2 {
+  display: none;
+}
+
 .light-flare {
   width: 300px;
   height: 300px;
@@ -1777,7 +1794,6 @@ button.btn-close {
   bottom: 0;
   left: -200px;
   z-index: -1;
-
 }
 
 .light-flare-reg2 {
@@ -1785,10 +1801,22 @@ button.btn-close {
   bottom: 0;
   right: 0;
   z-index: -1;
+  padding: 0;
+}
 
+.light-flare-contact {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  padding: 0;
+  transform: rotateX(341deg);
+}
 
-
-
+.light-flare-reg3 {
+  position: absolute;
+  z-index: -1;
+  display: none;
 }
 
 .movement {
@@ -1803,11 +1831,24 @@ button.btn-close {
   border: 1px solid #fff;
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
-  padding: 10px 20px;
+  padding: 10px;
   color: rgba(255, 255, 255, 0.25);
   height: 47px;
   /* width: 200px; */
   border-radius: 4px;
+}
+
+.register-form input::placeholder,
+.register-form select::placeholder {
+  color: #9c9b9b;
+
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+}
+
+.register-form select {
+  width: 100%;
+  color: #9c9b9b;
 }
 
 .review-text {
@@ -1820,10 +1861,10 @@ button.btn-close {
   height: 14px !important;
   width: 14px !important;
   background-color: transparent !important;
-  position: absolute;
+  /* position: absolute; */
   color: transparent !important;
-  left: 2px;
-  top: 2px;
+  /* left: 2px; */
+  /* top: 2px; */
 }
 
 .creacte-account-header {
@@ -1846,17 +1887,20 @@ select {
 
 option {
   background-color: #150e28;
+  color: #fff;
 
+}
+input:focus{
+  background-color: transparent !important;
+  color: #fff !important;
 }
 
 .agree {
   font-size: 12px;
-  position: relative;
-}
-
-.register-form select {
-  color: #fff;
-
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  /* position: relative; */
 }
 
 /* Register section */
@@ -1903,7 +1947,7 @@ option {
 
 .privacy-trans-star4 {
   position: absolute;
-  right: 0;
+  right: 2rem;
 }
 
 .privacy-satagra-3 {
@@ -1927,14 +1971,14 @@ option {
 .man-padlock {
   top: 170px;
   bottom: 0;
-  left: -55px;
+  right: 15px;
 
 
 }
 
 .privacy-and-policy-inner {
-  padding: 60px;
-  width: 589px;
+  padding: 30px;
+
   margin: 0 auto;
   line-height: 216.4%;
 }
@@ -2096,7 +2140,9 @@ option {
   flex-direction: column;
   align-items: center;
 }
-
+.modal-container{
+  background-color: transparent;
+}
 .modelBox .imageContainer {
   width: 100%;
   flex: 1;
@@ -2174,6 +2220,14 @@ option {
     height: 2rem;
     font-size: 14px;
   }
+
+  .share2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 3rem;
+  }
 }
 
 @media screen and (min-width: 576px) and (max-width: 768px) {
@@ -2190,9 +2244,41 @@ option {
     height: 1.5rem;
     font-size: 12px;
   }
+
+  .share2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 2rem;
+  }
+
 }
 
 @media screen and (max-width: 576px) {
+  .share2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+
+  .contactRow {
+    padding: 0;
+  }
+
+  .contactRow .col {
+    padding: 0;
+  }
+
+  .form-section {
+    padding: 1rem;
+    width: 100% !important;
+    background: transparent;
+    box-shadow: none;
+  }
+
   .modelBox {
     padding: 1rem;
   }
@@ -2216,6 +2302,21 @@ option {
     height: 1.5rem;
     font-size: 10px;
   }
+
+  .light-flare-reg1 {
+    display: none;
+  }
+
+  .light-flare-reg2 {
+    display: none;
+  }
+
+  .light-flare-reg3 {
+    position: absolute;
+    z-index: -1;
+    display: block;
+    top: 0;
+  }
 }
 
 
@@ -2226,6 +2327,10 @@ option {
   /* hero section */
   .left-hero {
     text-align: center;
+  }
+
+  .hero-section-container {
+    overflow-x: hidden;
   }
 
   .hero-header {
@@ -2513,7 +2618,7 @@ option {
   .privacy-text {
     font-size: 12px;
     text-align: center;
-    width: 268px;
+
   }
 
   .left-privacy h2,
@@ -2529,8 +2634,19 @@ option {
   .rule-1,
   .rule-2 {
     font-size: 12px;
-    width: 258px;
-    line-height: 176%;
+
+    line-height: 136%;
+  }
+
+  .privacy-and-policy-inner {
+    padding: 20px;
+    margin: 0 auto;
+
+
+  }
+
+  .privacy-and-policy {
+    padding: 0 !important;
   }
 
   .privacy-button {
@@ -2605,10 +2721,7 @@ option {
   /* contact-form */
   .contact-form input,
   .contact-form textarea {
-
     height: 47px;
-    width: 296px;
-
   }
 
   .share-on {
@@ -2622,14 +2735,14 @@ option {
   }
 
   .form-section {
-    width: 296px;
+    width: fit-content;
     margin: 0 auto;
 
   }
 
   .contact-form form {
     margin: 0 auto;
-    width: 296px;
+
   }
 
   .contact-container {
@@ -2638,13 +2751,13 @@ option {
 
   }
 
-  .category-group {
+  /* .category-group {
     width: 155px !important;
   }
 
   .size-group {
     width: 88px !important;
-  }
+  } */
 
   input {
     font-size: 13px;

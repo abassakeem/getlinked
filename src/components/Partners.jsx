@@ -57,7 +57,7 @@ export default function Partners() {
                   <img src={vuzual} alt="" />
                 </div>
               </div>
-              < Image fluid src={light1} className='part-light d-none d-md-block'/>
+              < Image fluid src={light1} className='part-light d-none d-xl-block'/>
             </div>
           </div>
         </div>

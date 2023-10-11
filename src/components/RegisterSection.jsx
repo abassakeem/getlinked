@@ -6,6 +6,7 @@ import congratulation from "./../assets/congratulation.png";
 import wink from "./../assets/wink emoji.png";
 import light from "./../assets/purple-left-register.png";
 import light2 from "./../assets/Purple-Lens-Flare-PNG.png";
+import light3 from "./../assets/light3.png";
 import { Col, Container, Image, Row } from "react-bootstrap";
 import { useCategoryList, useRegister } from "../hooks";
 import Button from "react-bootstrap/Button";
@@ -34,7 +35,6 @@ export default function RegisterSection() {
   };
 
   const data = useCategoryList();
-  console.log(data);
 
   const { mutate, isError, error, isSuccess, reset } = useRegister();
 
@@ -55,17 +55,17 @@ export default function RegisterSection() {
 
   return (
     <>
-      <div className="register-container position-relative vh-100 d-flex justify-content-center align-items-center">
-        <Container>
-          <Row>
-            <Col sm={6}>
+      <div className="register-container position-relative d-flex justify-content-center align-items-center w-100">
+        <Container fluid>
+          <Row className="p-4">
+            <Col md={6}>
               <div className="register-information">
                 <Image src={img} fluid />
               </div>
 
               <Image src={light} fluid className="light-flare-reg1" />
             </Col>
-            <Col sm={6}>
+            <Col md={6}>
               <div className="form-section">
                 <div className="form-header">
                   <h3 className="section header register-header">Register</h3>
@@ -77,12 +77,12 @@ export default function RegisterSection() {
                     <Image src={man} className="man-img " fluid />
                   </span>
                 </div>
-                <div className="register-form mt-3">
+                <div className="register-form mt-1">
                   <form>
                     <div className="create-account-header">
                       <p>CREATE YOUR ACCOUNT</p>
                     </div>
-                    <Row className=" justify-content-between align-items-end">
+                    <Row className=" justify-content-between m-0">
                       <Col md={6} xs={12} className="mb-3">
                         <label htmlFor="team_name" className="mb-2">
                           {" "}
@@ -96,6 +96,7 @@ export default function RegisterSection() {
                           name="team_name"
                           type="text"
                           placeholder="Enter the name of your group"
+                          className="form-control"
                         />
                       </Col>
                       <Col md={6} xs={12} className="mb-3">
@@ -110,6 +111,7 @@ export default function RegisterSection() {
                           name="phone_number"
                           type="text"
                           placeholder="Enter your phone number"
+                          className="form-control"
                         />
                       </Col>
                       <Col md={6} xs={12} className="mb-3">
@@ -124,6 +126,7 @@ export default function RegisterSection() {
                           name="email"
                           type="email"
                           placeholder="Enter your email address"
+                          className="form-control"
                         />
                       </Col>
                       <Col md={6} xs={12} className="mb-3">
@@ -138,6 +141,7 @@ export default function RegisterSection() {
                           name="project_topic"
                           type="text"
                           placeholder="What is your project topic"
+                          className="form-control"
                         />
                       </Col>
                       <Col md={6} xs={12} className="mb-3">
@@ -151,7 +155,7 @@ export default function RegisterSection() {
                           }
                           name="category"
                           id="category"
-                          className="category-group"
+                          className="category-group form-control"
                           value={formData.category}
                         >
                           <option value="">Select your category</option>
@@ -173,9 +177,9 @@ export default function RegisterSection() {
                           }
                           name="group_size"
                           id="group_size"
-                          className="size-group"
+                          className="size-group form-control"
                         >
-                          <option value="">Select You Group Size</option>
+                          <option value="">Select Group Size</option>
                           <option value="1">1</option>
                           <option value="2">2</option>
                           <option value="3">3</option>
@@ -202,15 +206,11 @@ export default function RegisterSection() {
                       <button
                         onClick={handleSubmit}
                         type="button"
-                        className="submit-btn mt-4 btn mb-5 "
+                        className="submit-btn mt-2 w-100 p-2"
+                        style={{ border: "none" }}
                       >
                         Submit
                       </button>
-                      <Image
-                        src={light2}
-                        fluid
-                        className=" light-flare light-flare-reg2"
-                      />
                     </Row>
                   </form>
                 </div>
@@ -224,7 +224,7 @@ export default function RegisterSection() {
         style={{ display: "block", position: "initial" }}
       >
         <Modal show={show} onHide={handleClose} centered>
-          <Modal.Body className="bg-secondary">
+          <Modal.Body className="modal-container">
             <div className="modelBox">
               <div className="imageContainer">
                 <img src={congratulation} alt="" />
@@ -245,6 +245,8 @@ export default function RegisterSection() {
           </Modal.Body>
         </Modal>
       </div>
+      <Image src={light2} fluid className=" light-flare light-flare-reg2" />
+      <Image src={light3} fluid className="light-flare-reg3" />
     </>
   );
 }

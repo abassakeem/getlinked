@@ -15,7 +15,7 @@ export default function Introduction() {
             <Row>
 
 
-              <Col sm={6} className='d-flex justify-content-center align-items-center'>
+              <Col sm={6} className='d-flex justify-content-center align-items-center p-0'>
                 <div className="left-intro">
                   <div className="position-relative">
                       <Image src={satagra} className='blinking-sata satagra-star intro-satagra-star ' fluid />

@@ -12,10 +12,10 @@ import light from "./../assets/Purple-Lens-Flare-PNGprivacy.png"
 export default function Privacy() {
     return (
         <>
-            <div className="privacy-section position-relative  pb-5 d-flex justify-content-center align-items-center mb-5">
+            <div className="privacy-section position-relative  pb-5 d-flex justify-content-center flex-wrap align-items-center mb-5">
                 <Container>
-                    <Row className='gap-5'>
-                        <Col>
+                    <Row className='align-items-center'>
+                        <Col sm={6} className="">
                             <div className="left-privacy mt-3 d-flex justify-content-center align-items-center">
 
                                 <div className="privact-header section-header mt-5">
@@ -33,7 +33,7 @@ export default function Privacy() {
                                 </div>
                             </div>
 
-                            <div className="privacy-and-policy mt-3">
+                            <div className="privacy-and-policy mt-3 p-2">
                                 <motion.div
                                  initial={{
                                     opacity: 0,
@@ -48,7 +48,7 @@ export default function Privacy() {
                                     delay: 0.50,
                                   }}
                                 
-                                className="privacy-and-policy-inner">
+                                className="privacy-and-policy-inner d-flex flex-column justify-content-center align-items-center">
 
 
                                     <p className='privacy-text '>At getlinked tech Hackathon 1.0, we value your privacy
@@ -68,20 +68,20 @@ export default function Privacy() {
                                             Read more
                                         </a></div>
                                 </motion.div>
-                                <div className="position-relative privacy-star-3">
+                                <div className="position-relative privacy-star-3 d-none d-md-block">
                                     <Image src={satagra} className='blinking-trans-star  privacy-sata-star ' fluid />
                                 </div>
                             </div>
                             < Image fluid src={light} className='privacy-light'/>
                         </Col>
-                        <Col>
+                        <Col sm={6}>
                             <div className="image-security-container position-relative">
                             <div className="position-relative privacy-star-8">
                                     <Image src={satagra} className='blinking-star  privacy-satagra-3 ' fluid />
                                 </div>
-                                <div className="position-relative privacy-star-5">
+                                {/* <div className="position-relative privacy-star-5">
                                     <Image src={star} className='blinking-star  privacy-star-star4 ' fluid />
-                                </div>
+                                </div> */}
                                 <Image src={security} fluid alt="security" className='security' />
                                 <Image src={padlock} className='position-absolute man-padlock ' fluid alt="man-on-padlock" />
                                 <div className="position-relative privacy-star-9">
